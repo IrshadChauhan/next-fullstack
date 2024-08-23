@@ -1,0 +1,54 @@
+.container{
+display: flex;
+/* gap: 100px; */
+/* justify-content: center; */
+align-items: center;
+
+}
+
+.item{
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+}
+
+.btn{
+  background-color: aquamarine;
+  color: black;
+  border: none;
+  padding: 20px ;
+  font-size: large;
+  width: max-content;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.title{
+  font-size: 60px;
+  background: linear-gradient(to bottom, #194c33 , #bbb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc{
+  font-size: 20px;
+}
+
+
+.img{
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  /* animation: move 2s infinite ease alternate; */
+}
+
+/* @keyframes move {
+  from {
+    transform: translateY(-15px);
+  }
+  to{
+    transform: translateY(10px) ;
+  }
+} */

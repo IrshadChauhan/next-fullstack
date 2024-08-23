@@ -1,0 +1,11 @@
+.container{
+  background-color: aquamarine;
+  color: black;
+  border: none;
+  padding: 20px ;
+  font-size: large;
+  font-weight: bold;
+  width: max-content;
+  border-radius: 15px;
+  cursor: pointer;
+}

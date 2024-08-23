@@ -1,0 +1,54 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/portfolio/page.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.page_container__ddMGI {
+  /* background-color: aqua;  */
+}
+
+.page_heading__c0R4k {
+  font-size: 60px;
+  font-weight: bolder;
+}
+.page_selectTitle__dnO26 {
+  font-size: 20px;
+  padding: 30px 0px;
+  font-weight: bold;
+}
+
+.page_items__GL6at {
+  display: flex;
+  gap: 40px;
+}
+
+.page_item__nGPTM {
+  height: 400px;
+  width: 300px;
+  border: 3px solid white;
+  position: relative;
+  background-size: cover !important;
+}
+
+.page_item__nGPTM:nth-child(1) {
+  background: url("/illustration.png");
+}
+
+.page_item__nGPTM:nth-child(2) {
+  background: url("/websites.jpg");
+}
+
+.page_item__nGPTM:nth-child(3) {
+  background: url("/apps.jpg");
+}
+
+.page_item__nGPTM:hover .page_title__ExBKC {
+  color: aquamarine;
+}
+
+.page_title__ExBKC {
+  position: absolute;
+  bottom: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  left: 20%;
+}
+

@@ -1,5 +1,9 @@
+"use client"
 import Link from 'next/link'
 import React from 'react'
+import styles from './navbar.module.css'
+import DarkMode from '../darkModeToggle/darkMode'
+import { signOut, useSession } from 'next-auth/react'
 
 const links =   [
   {
@@ -35,15 +39,28 @@ const links =   [
 ]
 
 const Navbar = () => {
+
+  const session = useSession();
+
   return (
-    <div>
-      <Link href='/'>Irshad-Fullstack</Link>
-    <div>
+    <div className = {styles.container}>
+      <Link href='/' className={styles.logo}>Next-Js</Link>
+    <div className={styles.links}>
+    <DarkMode/>
         {links.map(link => (
           <Link key={link.id} href={link.url}> 
           {link.title}
            </Link>
         ))}
+        
+        {session.status === "authenticated" && (
+          <button className={styles.logout} onClick={signOut}>
+            Logout
+          </button>
+        )}
+        
+   
+
         </div>
       </div>
   )
